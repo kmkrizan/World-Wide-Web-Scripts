@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Drive-In Movie Theater :: Tickets</title>
+<link rel="stylesheet" href="theater.css">
+<link rel="icon" href="favicon.ico" type="image/x-icon"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+</head>
+<!--
+Project Name: Drive-In Movie Theater (HW31)
+Author: Kristina Krizan
+Date Last Modified: 7/22/2020
+-->
+<body>
+<div id="wrapper">      
+<header><h1>Drive-In Movie Theater</h1></header>
+<nav>
+    <ul>
+        <li><a href="index.html"><b>Home</b></a></li>
+        <li><a href="movies.html"><b>Movies</b></a></li>  
+        <li><a href="tickets.html"><b>Tickets</b></a></li> 
+        <li><a href="concessions.html"><b>Concessions</b></a></li> 
+    </ul> 
+</nav>
+<main>
+    <h2>Drive-In Movie Ticket Information</h2>
+        <table>
+            <thead>
+                <tr>
+                  <th>Person</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+            <tr>
+                <th>Adults:</th> 
+                <td>$15.00</td>
+            </tr>
+            <tr>
+                <th>Students:</th> 
+                <td>$8.00</td>
+            </tr>
+            <tr>
+                <th>Children:</th> 
+                <td>$5.00</td>
+            </tr>
+        </table>  
+        <form method="post"
+            action="store_selective.php">
+            <label for="myName">*Name:</label>
+                <input type="text" name="myName" id="myName" required>
+            <label for="myEmail">*E-mail:</label>
+                <input type="email" name="myEmail" id="myEmail" required>
+            <label for="myPhone">Phone:</label>
+                <input type="tel" name="myPhone" id="myPhone">  
+            <label for="myDate">*Date:</label>     
+                <input type="date" name="myDate" id="myDate">
+            <label for="myChoice1">*Adult Tickets:</label>    
+                <input type="number" name="myChoice1" id="myChoice1" min="0" max="99" required>
+            <label for="myChoice2">*Student Tickets:</label>    
+                <input type="number" name="myChoice2" id="myChoice2" min="0" max="99" required>
+            <label for="myChoice3">*Child Tickets:</label>    
+                <input type="number" name="myChoice3" id="myChoice3" min="0" max="99" required>
+        <input type= "submit" value="Submit" id="mySubmit">    
+        <input type= "reset" value="Reset" id="myReset">          
+    </form>
+</main>   
+<footer><small><i>Copyright &copy; 2020 Drive-In Movie Theater<br/><a href="mailto:kristina@krizan.com">kristina@krizan.com</a></i></small></footer> 
+</div>
+</body>
+</html>

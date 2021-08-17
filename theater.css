@@ -1,0 +1,190 @@
+/*
+Project Name: Drive-In Movie Theater (HW25)
+Author: Kristina Krizan
+Date Last Modified: 7/9/2020
+*/
+
+/* Set the body background, text color, and font style */
+body { background-image: url(sandpaper.png);
+    background-color: #CFD8DC;
+    color: #330000;
+    font-family: Verdana, Arial, sans-serif; 
+}
+
+/* Set the header background, text color, and make it centered */
+header { background-image: url(logodmt.gif);
+    height: 120px;
+    background-repeat: no-repeat; 
+}
+
+/* Make h1 take up more vertical space */
+h1 { text-align: center; 
+	margin: 0;
+	text-indent: 100%;
+	white-space: nowrap;
+    overflow: hidden;
+    color: #DBDBDB;
+    max-width: 1280px;
+}
+
+nav { font-weight: bold;
+    background-color: #CFD8DC;
+    padding: 0.5em 0.5em 0.5em 2em;
+}
+
+nav { font-weight: bold;
+    float: left;
+    width: 160px; 
+    padding: 0em;         
+}
+
+nav a { text-decoration: none; }
+
+nav a:link { color: #FFFFFF; }
+
+nav a:visited { color: #0000FF; }
+
+nav a:hover { color: #9370DB; }
+
+nav a:hover { color: #000000; }
+
+nav ul { list-style-type: none;
+    padding-left: 1em;
+}
+
+h2 { font-size: 1.6em; }
+
+main { padding: 10px 20px 30px 20px;
+    background-color: #DBDBDB; 
+    overflow: auto;
+}
+
+h3 { background-color: #CFD8DC; 
+    font-size: 1.2em;
+    padding-left: 0.5em;
+    padding-bottom: 0.25em;
+}
+
+table { border: 1px #0000FF;
+    border-collapse: collapse; 
+    width: 40%;
+}
+
+thead { background-color: #0000FF; 
+    color: #FFFFFF;
+}
+
+td { padding: 2px;
+    border: 1px solid #0000FF;
+    text-align: center;
+}
+
+.text { text-align: left; }
+
+th { padding: 2px;
+    border: 1px solid #0000FF;
+}
+
+form { padding: 2em; }
+
+label { float: left;
+    text-align: right;
+    width: 12em;
+    padding-right: 1em;
+}
+
+input { display: block;
+    margin-bottom: 1em;
+}
+
+#mySubmit { margin-left: 9.5em; }
+
+#myReset { margin-left: 9.5em; }
+
+.details { padding-left: 20%;
+    padding-right: 20%;
+}
+
+img { padding-left: 10px;
+    padding-right: 10px; 
+}
+
+#logo { float: right; }
+
+main div { clear: right; } 
+
+#mobile { display: none; }
+
+#desktop { display: inline; }
+
+@media only screen and (max-width: 1024px) {
+    body { margin: 0;
+        padding: 0;
+        background-image: none;
+    }
+    #wrapper { width: auto;
+            min-width: 0;
+            margin: 0;
+            box-shadow: none;
+    }
+    h1 { margin: 0; }
+    nav { float: none;
+        width: auto;
+        padding: 0.01em 1em 0.01em 1em;
+    }
+    nav li { display: inline-block; }
+    nav a { padding-right: 2em; }
+    main { padding: 1em; 
+        margin-left: 0;
+        font-size: 90%;
+    }
+    footer { margin: 0; }
+    #logo { margin-right: 0; }
+}
+
+@media only all and (max-width: 768px) {
+    header { background-image: url(logodmtsmall.gif);
+        height: 60px;
+        background-repeat: no-repeat; 
+    }
+    h1 { height: 100%;
+        font-size: 1.5em;
+        padding-left: 0.3em;
+    }
+    nav { padding: 0; }
+    nav a { display: block;
+        padding: 0.2em;
+        font-size: 1.1em;
+        border-bottom: 1px #330000;
+    }
+    nav ul { margin: 0;
+            padding: 0;
+    }
+    nav li { display: block;
+            margin: 0;
+            padding: 0;
+    }
+    main { padding: 0.1em 0.6em 0.1em 0.4em; }
+    #logo { display: none; }
+    footer { padding: 0; }
+    #mobile { display: inline;}
+    #desktop { display: none; }
+}
+
+header, nav, main, footer { display: block; }
+
+footer { background-color: #CFD8DC;
+        color: #000000;
+        font-size: .60em;
+        font-style: italic;
+        text-align: center;
+        padding-bottom: 10px;
+        border-top: 2px solid #221811; 
+} 
+
+#wrapper { max-width: 1280px;
+            margin-right: auto;
+            margin-left: auto;
+            background-color: #DBDBDB;
+            box-shadow: 5px 5px 5px #828282;
+}
